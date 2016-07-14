@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "cors": "2.7.1",
-    "express": "2.5.x"
+    "express": "2.5.x",
+    "http-proxy-middleware": "0.17.0"
   },
   "engines": {
     "node": "4.4.4"
