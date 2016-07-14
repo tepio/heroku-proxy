@@ -7,9 +7,9 @@ var cors = require('cors');
 app.use(cors());
 
 if (process.env.NEW_BASE_URL) {
-  app.get('*', function(request, response) {
-    response.redirect(process.env.NEW_BASE_URL + request.url)
-  });
+  // app.get('*', function(request, response) {
+  //   response.redirect(process.env.NEW_BASE_URL + request.url)
+  // });
   app.use('/', proxy({ target: process.env.NEW_BASE_URL, changeOrigin: true }));
 }
 
