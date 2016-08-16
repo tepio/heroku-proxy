@@ -1,10 +1,14 @@
 {
-  "name": "node-example",
-  "version": "0.0.1",
+  "name": "heroku-proxy",
+  "version": "0.0.2",
+  "scripts": {
+    "start": "node web.js"
+  },
   "dependencies": {
     "cors": "2.7.1",
     "express": "2.5.x",
-    "http-proxy-middleware": "0.17.0"
+    "http-proxy-middleware": "0.17.0",
+    "throng": "^4.0.0"
   },
   "engines": {
     "node": "4.4.4"
